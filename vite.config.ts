@@ -63,6 +63,10 @@ export default defineConfig(async ({ command }) => {
           ...localBindingConfig,
           ...(command === "serve"
             ? {
+                // Local dev only: pass the AI key from your shell. Production gets it as a secret.
+                vars: process.env.ANTHROPIC_API_KEY
+                  ? { ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY }
+                  : {},
                 services: [
                   {
                     binding: "CONNECTORS",

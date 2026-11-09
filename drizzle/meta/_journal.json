@@ -8,6 +8,13 @@
       "when": 1794199862926,
       "tag": "0000_brown_bromley",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1794199863926,
+      "tag": "0001_rate_limits",
+      "breakpoints": true
     }
   ]
 }

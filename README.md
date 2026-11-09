@@ -1,3 +1,19 @@
+# Away Message
+
+An instant message mystery set in October 2004. Every buddy is a character played by Claude.
+
+- Story, characters, clues, and away messages: `lib/game/world.ts`
+- AI route (briefs the character, enforces what each one can reveal, rate limits by IP): `app/api/chat/route.ts`
+- Game screen and save system (saved in the player's browser): `app/page.tsx`
+
+## Launch checklist
+
+1. Set the secret `ANTHROPIC_API_KEY` on the host. Set a monthly spend limit in the Anthropic Console too.
+2. Apply the D1 migrations in `drizzle/` (the rate limiter needs `rate_limits`).
+3. For local play: `ANTHROPIC_API_KEY=... npm run dev`.
+
+---
+
 # vinext-starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.

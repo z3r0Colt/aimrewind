@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AIM Rewind",
-  description: "Your buddy list is back. An independent AOL and AIM inspired experience.",
+  title: "Away Message",
+  description: "An instant message mystery set in fall 2004. Every buddy is played by AI.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
